@@ -1,0 +1,29 @@
+<script>
+    function toggleBar(x) {
+        x.classList.toggle("toggled");
+        document.getElementsByTagName("nav")[0].classList.toggle("toggled");
+    }
+</script>
+<grid-item class="logo">
+    <a href="/index.html"><img src="resources/icon.png" alt="SocioReform logo"></a>
+</grid-item>
+<grid-item>
+    <div onclick="toggleBar(this)">
+        <div class="bar-top"></div>
+        <div class="bar-mid"></div>
+        <div class="bar-bottom"></div>
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a class="highlight" href="#learn">Learn</a>
+            </li>
+            <li>
+                <a class="highlight" href="#recognize">Recognize</a>
+            </li>
+            <li>
+                <a class="highlight" href="#help">Help</a>
+            </li>
+        </ul>
+    </nav>
+</grid-item>
